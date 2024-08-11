@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background and border</title>
+      <style>
+    #mybg{ color:red;
+        background-color: aqua;
+        width: 500px;
+    height: 100px;
+    border: width 5px;
+    border-color: brown;
+    border-radius: 10px;
+    border-style:solid;
+   /* or we can use */
+    /* border: 5px solid brown   */
+    }
+#second{  color:blueviolet;
+    height: 100px;
+    width: 500px;
+    background-color: aqua;
+    /* one border make curve */
+    border-top-left-radius: 10px; 
+    /* indivual color on border */
+    border-left: 5px solid  brown;
+    border-right: 5px solid  brown;
+    border-top: 5px solid  brown;
+    border-bottom: 5px solid  brown;
+}
+#third{   height: 400px;
+    width: 500px;
+    /* adding background images */
+    background-image: url(https://www.bing.com/th/id/OIP.b0rF7YzDUSJQQnuUvyjJEwHaEo?w=266&h=180&c=7&r=0&o=5&dpr=1.25&pid=1 );
+   
+    border: 5px red solid;
+    /* not repeat images */
+background-repeat: no-repeat;
+/* position on center */
+background-position: center center ;
+
+
+}
+      </style>
+</head>
+<body>
+   <p id="mybg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <p id="second">Lorem ipsum dolor sit amet consectetur adipisicin</p> 
+   <p id="third">Lorem ipsum dolor sit.</p>
+
+</body>
+</html>

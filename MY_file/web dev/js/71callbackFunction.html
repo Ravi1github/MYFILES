@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student list</h2>
+    <ul id="students"></ul>
+
+    <script>
+        //pretend that this response is coming from server
+        const student =[
+            {  name:"harry",subject:"js"},
+            {  name:"rohan",subject:"c" }
+    
+        ]
+
+        function enrollStudent(student){
+       
+            setTimeout(function(){
+                student.push(student);
+            }, 3000);
+        }
+        function getStudent(){
+          
+            setTimeout(function(){
+                let str=" ";
+                student.forEach(function(student){
+                 str+=`<li>${student.name}</li> `
+                });
+                document.getElementById('student').innerHTML=str;
+            }, 1000);                         
+        }
+        let newStudent={name:"sunny",subject:"python"}
+        enrollStudent(newStudent);
+        getStudent();
+    </script>
+</body>
+</html>

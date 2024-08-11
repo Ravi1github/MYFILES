@@ -1,0 +1,39 @@
+.box{
+  background-color: rgb(153, 150, 150);
+    display: flex;
+width: 30%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10rem;
+    border: 5px solid brown;
+    padding: 2rem;
+    border-radius: 20px;
+   
+}
+.location{
+    margin-top : 50px;
+}
+#weathercon{
+    display: flex;
+    width: 30%;
+    display: inline-block;
+    margin: auto;
+}
+#weathercon i{
+   
+     font-size: 100px;
+     
+}
+
+.location i{
+    margin-right: 20px;
+}
+h2,h3,h1,p{
+    font-style: italic;
+    
+    
+}
+h2{
+    font-size: 2rem;
+    margin-left: 4px;
+}

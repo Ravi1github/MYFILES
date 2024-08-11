@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            /* for using animation  */
+            animation-name: harry;
+            animation-duration: 2s;
+            /* no.of times run */
+            animation-iteration-count: 3;
+            /* applicable only in postion relative */
+            position:relative;
+            /*   animation apply rah jaye*/
+            animation-fill-mode:forwards;
+            animation-delay: 2s;
+            /* short hand */
+            /* animation: name, timeduration,  delay,  iterationcount,timingfunction, fillmode*/
+           animation: harry1 2s 2s 4 ease;
+            
+
+        }
+        /* for motion in rectangle   */
+        @keyframes harry{
+            0%{
+               top:0;
+               left: 0;
+            }
+            25%{
+                top:200px;
+                left:0px;
+
+            }
+           
+            50%{
+              top:200px;
+              left:500px;
+            }
+            75%{
+                top:0;
+                left: 500px;
+            }
+            100%{
+               top:0px;
+               left:0px
+            }
+        }
+        /*key frames-- animation kaha se kaha tak karna aur kis naam ka hai we can also set it toward height also */
+        @keyframes harry1{
+            from{
+                width:200px;
+            }
+            to{
+                width:400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

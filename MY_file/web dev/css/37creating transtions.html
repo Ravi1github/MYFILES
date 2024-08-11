@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating transtion</title>
+    <style>
+        #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color:aqua;
+            align-items: center;
+            justify-content: center;
+            /* apply on bg color */
+            transition-property: background-color;
+            /* timing of transtion */
+            transition-duration: 5s;
+            /* baad me slow hoga */
+            transition-timing-function: ease-out;
+            /* short hand  */
+            transition: background-color 4s ease-in;
+            /* to apply on all */
+            transition: all 3s ease-in;
+
+
+
+        }
+
+        #box:hover{
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            font-size: 40px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>this is css tutorials</h3>
+    <div class="cont">
+        <div id="box">
+    this is my box
+        </div>
+    </div>
+</body>
+</html>

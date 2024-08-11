@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating class
+          class empolyess{
+            constructor(givenname,givenexperience,givendivision)
+            {
+                this.name=givenname;
+                this.experience=givenexperience;
+                this.division=givendivision;
+            }
+
+            slogan(){
+                return `i am ${this.name}  and this company is best`;
+            }
+            joiningYear(){
+             return 2020-this.experience;
+            }
+
+            add(a,b){
+        return a+b;
+     }
+          }
+    
+          
+          emp1=new empolyess("harry",12,"A");
+          console.log(emp1);
+          console.log(emp1.slogan());
+          console.log(emp1.joiningYear());
+          console.log(emp1.add(2,3));
+//inheritance
+  //creating inheritance  programmer by empolyess class
+
+      class programmer extends empolyess{
+    
+        constructor(givenname,givenexperience,givendivision,givenlanguage,givengit){
+            //super means phele class ka constructor
+         super(givenname,givenexperience,givendivision);
+         this.language=givenlanguage;
+         this.github=givengit
+        
+       
+        }
+
+        fav(){
+            if(this.language=="python")
+            return "python";
+            else
+            return "js";
+         }
+      }
+    programmer1=new programmer("rohan",12,"A","python","xyz");
+    console.log(programmer1);
+    console.log(programmer1.fav());
+
+
+
+
+    </script>
+</body>
+</html>

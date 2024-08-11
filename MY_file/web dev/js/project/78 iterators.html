@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fruitsIterator(values)
+        {
+            let nextindex=0;
+            //we will return an object
+
+            return{
+                next:function(){
+                    if(nextindex<values.length){
+                        //we will return this object
+                         return {
+                           value:values[nextindex++],
+                           done:false,
+                        }
+                    }
+                   else{
+
+                   return {
+                        done:false,
+                    }
+                   
+                   } 
+
+                }
+            }
+        }
+        const arr=['apple','grapes','oranges','bhindi'];
+   console.log(arr);
+        //using iterator
+        const fruits=fruitsIterator(arr);
+        console.log(fruits.next());
+        console.log(fruits.next());
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(170, 68, 68);
+}
+
+#ser{
+    flex-direction: column;
+}
+.primary{
+    margin-top: 600px;
+}

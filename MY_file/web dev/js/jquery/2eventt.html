@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body>
+    <h2 class="first">this is my body</h2>
+    <h2>this is my body</h2>
+    <h2>this is my body</h2>
+    <button id="btn" >toggle now</button>
+    <div class="wiki">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum commodi voluptates labore tempore impedit. Illo eveniet voluptas quis dignissimos at! Error nemo corporis distinctio pariatur blanditiis eligendi nesciunt molestiae.
+    </div>
+</body>
+<script src="jquery-3.6.1.min.js"></script>
+<script>
+    //event in js
+    // mouse event=click,dbclick,mousenter,mouseleave
+    //keyboardevent=keypress,keydown,keyup
+    //form,windowevent
+
+
+    // $('h2').click(function () {
+    //     console.log("this is run");
+
+    // });
+    // //mouseenter
+    // $('h2').mouseenter(function () {
+    //     console.log("mouse enter");
+
+    // });
+
+  //hiding takes 2sec;
+//  $('.wiki').hide(2000,function(){
+//     console.log("hide");
+//  });
+//  //for showing
+//  $('.wiki').show(2000,function(){
+//     console.log("showing");
+//  });
+
+ $('#btn').click(function(){
+    $('.wiki').toggle(1000);
+ });
+ 
+//for slide
+ $('.wiki').slideDown(2000);
+
+//animation
+$('.wiki').animate({
+    
+    height:'200p' ,
+    width:'340px',
+
+
+},2000);
+
+//to remove the text
+// $('.wiki').remove();
+
+//for css
+$('.wiki').css('color','red');
+ //
+
+
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="cont">
+    <li class="ulclass">hi</li>
+    <li class="ulclass">how</li>
+    <li class="ulclass">are</li>
+    <li class="ulclass">you</li>
+   
+</div>
+
+    <script>
+        //creating new element
+        let element=document.createElement("li");
+        //creating its class and class
+        element.className='liclass';
+        element.id='li-id';
+        
+        //adding attribute
+        element.setAttribute('title','my title');
+        element.innerHTML="hello thiss is added";
+        //adding on li by selecting on class and after it added
+        let ull=document.getElementsByClassName('ulclass')[0];
+        console.log(ull);
+        ull.appendChild(element);
+        //or 
+        let text=document.createTextNode("it is also added");
+        ull.appendChild(text);
+        console.log(element);
+
+        //replacing
+
+        let elem2=document.createElement("h3");
+        elem2.id='elem2id';
+        elem2.className='elem2class';
+        let tnode=document.createTextNode("this is created node for elem2");
+        elem2.appendChild(tnode);
+        //code for replacing
+        element.replaceWith(elem2);
+  //for getting attributes 
+  //give id simalarly other
+  let pr=elem2.getAttribute('id');
+  console.log(pr);
+  //check attributes has or not
+  let check =elem2.hasAttribute('href');
+  console.log(check);
+    </script>
+</body>
+</html>

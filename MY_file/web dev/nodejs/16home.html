@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./home.css">
+    <title>Weather</title>
+</head>
+<body>
+   <div class="box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+
+    <div id="weathercon">
+        <i class="fas fa-sun" style="color: #eccc68;"></i>
+    </div>
+    <div class="info"> 
+        <h2 class="location"><i class="fas fa-street-view" style="color:aliceblue;"></i>{%location%},{%country%} </h2>
+        <p id="date">12/43/2022</p>
+        <h1 class="temp">{%tempval%}&deg;C</h1>
+        <h3 class="tempmin_max">min {%tempmin%}&deg;C |max {%tempmax%}&deg;C</h3>
+     </div>
+   </div> 
+</body>
+<script>
+let curdate=document.getElementById('date')
+let weathercon=document.getElementById('weathercon');
+const tempstatus="{%tempstatus%}";
+
+const getcurrentday=()=>{
+    let weekday=new Array(7);
+    weekday[0]='sunday';
+    weekday[1]='monday';
+    weekday[2]='tueday';
+    weekday[3]='wednesday';
+    weekday[4]='thursday';
+    weekday[5]='friday';
+    weekday[6]='saturday';
+    
+    let currtime=new Date();
+let day=   weekday[currtime.getDay()];
+return day;
+
+}
+
+//for time
+const getcurrentime=()=>{
+    let now=new Date();
+    let month=now.getMonth()+1;
+    let day=now.getDate();
+    let year=now.getFullYear();
+    let hour=now.getHours();
+    let min=now.getMinutes();
+
+    let period="AM";
+    if(hour>12)
+    {
+        period="PM";
+        hour-=12;
+    }
+    if(min<10){
+        min='0'+min;
+    }
+
+    let time= "DATE :"+ day+"/"+month+"/"+year +"  TIME :  "+hour+":"+min+period;
+    return time;
+
+};
+
+
+  let time=getcurrentday()+"   "+ getcurrentime();
+ 
+  let date=document.getElementById('date');
+  date.innerHTML=time;
+
+  
+
+</script>
+
+</html>

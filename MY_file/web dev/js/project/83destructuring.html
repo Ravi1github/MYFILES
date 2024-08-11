@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a,d;
+        [a,b]=[12,33];
+        console.log(a,b);
+        //remaing becommes to an array in d;
+        [a,b,c,...d]=[2,3,3,34,23,223,22];
+        console.log(d);
+        //remaing becommes to an object in d;
+        ({a,b,c,...d}={a:2,b:33,c:45,d:23,e:5});
+        console.log(a,b,c,d);
+        //a,b,c assign to
+        let fruits=['appkle','banana','mango'];
+        [a,b,c]=fruits;
+        console.log(a,b,c);
+        //object destrucing
+      let  laptop={
+            mode:"hp",
+            age:12,
+            gender:'male',
+            start:function(){console.log("started")}
+        }
+       let{mode,age,gender,start}=laptop;
+    console.log(mode,age,gender,start)
+
+
+    </script>
+</body>
+</html>

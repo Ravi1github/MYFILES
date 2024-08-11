@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //creating new map
+        const mymap = new Map();
+        console.log(mymap);
+        let key1 = 'mystr', key2 = {}, key3 = function () { };
+
+        //setting map value
+        mymap.set(key1, 'this is a string');
+        mymap.set(key2, 'this is a blank');
+        mymap.set(key3, 'this is empty function');
+
+        console.log(mymap);
+
+        //getting the values of map
+        let value1 = mymap.get(key1);
+        console.log(value1);
+
+        let value2 = mymap.get(key2);
+        console.log(value2);
+        //getting size
+        console.log(mymap.size);
+
+        //you can iterate using for of loop to get keys and values
+        for (let [key, value] of mymap) {
+            console.log(key, value);
+        }
+        //get only keys
+        for(let key of mymap.keys()){
+            console.log( 'key is :' ,key);
+        }
+
+        //get only values
+        for(let value of mymap.values()){
+            console.log( 'value is :', value);
+        }
+
+        console.log('by using for each loop');
+     //you can loop using for each loop to get keys and value
+  mymap.forEach((value,key)=>{
+    console.log( 'key is :' ,key);
+    console.log( 'value is :', value);
+  })
+
+  //converting map to array
+  let myarray=Array.from(mymap);
+  console.log( 'map to array is', myarray);
+
+  //converting map keys to array
+  let mykeysarray=Array.from(mymap.keys());
+  console.log( 'map  keys to array is', mykeysarray);
+
+  //converting map values to array
+  let myvaluesarray=Array.from(mymap.values());
+  console.log( 'map values  to array is', myvaluesarray);
+  
+
+    </script>
+</body>
+
+</html>

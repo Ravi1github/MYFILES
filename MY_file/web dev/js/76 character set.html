@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let reg=  /h[a-z]rry/;//h ke baad a-z tak koi bhi char ho sakta hai or
+        //  let reg=  /h[xyz]arry/ //x ,y,z anyone
+        //  let reg=  /h[^xyz]arry/    // execpt x ,y,z all other char
+        //  reg=  /h[a-zA-Z]rr[yu0-9]/ ;  // a-z or A-Z and y,u or 0-9 
+        
+        //quantifier
+      //  reg=/har{2}y/;  //means r is two times
+   //  reg=/har{0,2}y/;  //means r is 0 or two times
+
+   //grouping
+   reg=/(har){2}/; //means har is two times
+    
+        const str="harry bhai";
+        let res1=reg.exec(str);
+        console.log("the result is ",res1);
+        if(res1)
+        {
+            console.log(`${reg.source} is  match with the ${str}`);
+        }
+        else
+        {
+            console.log(`${reg.source} is not match with the ${str}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psedo selectors</title>
+   <style>
+       .container{
+           background-color: antiquewhite;
+           border:5px solid rebeccapurple;
+           width: 600px;
+           padding: 20px;
+           margin:auto;
+       }
+       .myclass{
+           background-color: aqua;
+           /* to make cursor on both */
+           cursor: pointer;
+           border: 2px solid brown;
+           border-radius: 2px;
+           /* to remove under line */
+           text-decoration:none;
+       }
+       /* to make color when mouse on button */
+       a:hover{
+           color:rgb(232, 21, 21);
+       }
+       #btn:hover{
+           color: red;
+           margin-bottom: 4px;
+           background-color: whitesmoke;
+       }
+
+   </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>this is my heading</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, labore.</p>
+        <a href="" class="myclass">read more</a>
+        <button class="myclass" id="btn">contact us for more</button>
+    </div>
+</body>
+</html>

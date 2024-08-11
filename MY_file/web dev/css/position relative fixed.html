@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box{
+            
+            border: 2px solid brown;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            /* to make box in one line */
+            display: inline-block;
+        
+        }
+        #myclass3{
+             /* position:relative; make the change in position with respect to original position */
+             /* position: fixed; positon are fixed change in position with starting  */
+             /* stactic is original postion */
+             /* position absolute me starting ke respect se hota hai */
+             /* bottom: 4px; */
+             /* right: 4px; */
+             /* stick the box and  make the change in position with respect to original position; */
+             position: sticky;
+             top: 2px;
+     
+             
+        }
+
+        #myclass4{
+            position: sticky;
+             top: 2px;
+        }
+        .container{
+            border: 4px solid red;
+            background-color:bisque;
+            height:4444px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+    <div class="box" id="myclass1">1</div>
+    <div class="box" id="myclass2">2</div>
+    <div class="box" id="myclass3">3</div>
+    <div class="box" id="myclass4">4</div>
+</div>
+</body>
+</html>

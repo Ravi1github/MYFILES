@@ -1,0 +1,28 @@
+.cont{
+    border:4px solid brown;
+    background-color:gray;
+    margin: 20px;
+    padding: 20px;
+    width: 1000px;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .btn{
+    border:2px solid brown;
+    background-color:rgb(177, 93, 93);
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+   border-radius: 5px;
+  
+    
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .btn:hover{
+    background-color: aqua;
+    color: blueviolet;
+  }

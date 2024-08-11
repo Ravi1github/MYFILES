@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            border:2px solid red;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(163, 230, 230);
+            /* syntax  box shadow =x  y blur-radius radius spread color   */
+            /* +ve make downward shadow and -ve make upward */
+            box-shadow: -10px -10px 10px  2px gray;
+        }
+        .card h2{
+            text-shadow: 2px 2px  rgb(184, 58, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+           <h2>this is c++ courses</h2>  
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dignissimos sapiente voluptatem suscipit velit temporibus ullam recusandae animi quos, nihil, voluptas quam facere sunt molestiae accusantium corrupti quasi hic iure, consequuntur nisi et asperiores!</p>
+        </div>
+        <div class="card" id="card2">
+        <h2>this is html  courses</h2> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dignissimos sapiente voluptatem suscipit velit temporibus ullam recusandae animi quos, nihil, voluptas quam facere sunt molestiae accusantium corrupti quasi hic iure, consequuntur nisi et asperiores!</p>
+        </div>
+        <div class="card" id="card3">
+          <h2>this is css courses</h2> 
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dignissimos sapiente voluptatem suscipit velit temporibus ullam recusandae animi quos, nihil, voluptas quam facere sunt molestiae accusantium corrupti quasi hic iure, consequuntur nisi et asperiores!</p>
+        </div>
+    </div>
+</body>
+</html>

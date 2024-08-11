@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //this is a regular expression  are used for matching the element 
+        let reg=/harry/g;   // g means global  and check    check for next occurance for next time running
+        reg=/harry/i;  //i means case insensitive 
+        console.log(reg);
+        console.log(reg.source);  //reg ke andar ka masala
+        let s="this is a great code with harry and also harry bhai";
+        //function to match expression
+    
+        // 1..exec() , this function will return an array for match or null f0r no match
+        let result=reg.exec(s);
+        console.log(result);
+
+        //next time checking
+        result=reg.exec(s);
+        console.log(result);
+        console.log(result.index);
+        
+        //now it will return null
+
+        result=reg.exec(s);
+        console.log(result);
+
+        // 2..test() function return true or false
+        let result2=reg.test(s);
+        console.log(result2);
+//3..match()  it will return an array of result or null
+let result3= s.match(reg);//reverse syntaxx hai
+console.log(result3);
+//4..search() return index of first match else -1;
+let result4=s.search(reg);
+console.log(result4);
+  //5..replace return the change of string  with all the replacement if it is global flag the all will get replace else first replace
+let result5=s.replace(reg,"shubham"); 
+console.log(result5);  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating set
+        let myset=new Set();
+        //adding values to this set
+        myset.add('my name');
+        myset.add('my name');  //it takes only one  because repetion is not allowed
+
+        myset.add(123);
+        myset.add(true);
+        console.log(myset);
+
+        //or
+        // let myset2=new Set(['ram',121,{a:4,b:2},true]);
+        // console.log(myset2);
+
+        //getting size
+
+        console.log(myset.size);
+        //checking values present in set if yes return true
+        console.log(myset.has(123));
+        //removing element
+        myset.delete(123);
+        //iterating set
+        for(let key of myset){
+            console.log("values is: ",key);
+        }
+        //for each loop
+        myset.forEach((key)=>{
+            console.log("values is: ",key);
+        });
+        
+
+    </script>
+</body>
+</html>

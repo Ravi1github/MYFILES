@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox tutorilas</title>
+    <style>
+        .cont{
+            height: 500px;
+            width:100%;
+            border: 2px solid black;
+            /* to make it flex */
+            display: flex;
+            /* property of flex */
+            /* to make it on coloun */
+            flex-direction: column;
+            /* to make it right side */
+            flex-direction: row-reverse;
+            /* on changing width to move it on next line  */
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* to use both  */
+            /* flex-flow:wrap row-reverse   */
+            /* to make content box centre */
+            justify-content: center;
+            /* to make space betwwn box isme startingg se nhi hoga */
+            justify-content: space-between;
+            /* isme starting se hoga */
+            justify-content: space-evenly;
+            /* to align box */
+            align-items: center;
+        }
+        .item{
+            background-color: antiquewhite;
+            border: 2px solid rgb(183, 106, 106);
+            margin: 4px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+        #item1{
+            /* jiska order bada hoga woh baad me ayega */
+            order:4;
+            /* when flex-direction is set to row ,flex -basis : will control width*/
+               /* when flex-direction is set to col ,flex -basis : will control height*/
+               flex-basis: 250px;
+
+        }
+        #item2{
+            order: 2;
+            /* on changing width it grow with more twice more speed */
+            flex-grow: 2;
+            /* same as flex-shrink */
+        }
+        #item3{
+            /* to use all order is flex- grow flex-shrink flex-bais */
+             flex: 2 3 300px;
+             /* to send it positon */
+             align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox tut</h1>
+    <div class="cont">
+        <div class="item" id="item1"> first box</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <div class="item" id="item4">four</div>
+        <div class="item" id="item5">fives</div>
+       
+    </div>
+</body>
+</html>

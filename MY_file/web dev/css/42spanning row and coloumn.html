@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spanning</title>
+    <style>
+   .items{
+       border: 2px solid black;
+       background-color:pink;
+       padding: 20px;
+   }
+   .cont{
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       grid-template-rows: repeat(4,1fr);
+         /* baaki sab row ko 2fr me kar dega */
+         grid-auto-rows: 2fr;
+       /* we can also use coloum and row gap individual */
+      grid-column-gap: 4rem;
+      grid-row-gap: 1rem;
+       
+   }
+          .items:first-child{
+           /* for spanning the col start from first col and span 4 box*/
+           grid-column-start: 1;
+           grid-column-end: 4;
+           /* or we can use */
+           grid-column: 1/span 3;
+           /* for spanning row */
+           grid-row-start: 1;
+           grid-row-end: 3;
+           /* or we can use */
+           grid-row: 1/span 3;
+           
+
+       }
+       .item:first-child{
+           grid-column: 3/span 2;
+           grid-row: 2/span 2;
+       }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="items" >item-1</div>
+        <div class="items">item-2</div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+        <div class="items" >item-5</div>
+        <div class="items">item-6</div>
+        <div class="items">item-7</div>
+        <div class="items">item-8</div>
+        <div class="items">item-9</div>
+        <div class="items">item-10</div>
+        <div class="items">item-7</div>
+        <div class="items">item-8</div>
+        <div class="items">item-9</div>
+        <div class="items">item-10</div>
+        <div class="items">item-10</div>
+    </div>
+</body>
+</html>

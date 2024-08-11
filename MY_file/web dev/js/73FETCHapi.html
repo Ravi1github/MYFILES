@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+ <h2>Student list</h2>
+
+ <button type="button" id="mybtn" class="btn btn-primary">Your Button </button> 
+ <button type="button" class="btn btn-primary">Fetch Data </button>
+ <div id="content"></div>
+
+
+ <script>
+    let mybtn=document.getElementById('mybtn');
+    let content=document.getElementById('content');
+  
+    // function getdata(){
+    //     console.log("inside first then");
+    //     //let suppose it come from url  
+    //     url="harry.txt";
+    //     //fetch api
+    //     fetch(url).then((response) =>{
+    //  return response.text();
+    //     }).then((data)=>{
+    //         console.log("inside second then");
+    //         console.log(data);
+    //     })
+    // }
+
+    function getdata(){
+        console.log("inside first then");
+        //let suppose it come from url  
+        url="https://api.github.com/users";
+        //fetch api
+        //fetch api two .then use hota hai
+        fetch(url).then((response) =>
+        {
+            
+     return response.text();
+        }).then((data)=>{
+            console.log("inside second then");
+            console.log(data);
+        })
+    }
+
+    console.log("before runnig get data");
+    getdata();
+    console.log("after runnig get data");
+
+ </script>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Hello</h1>
+  <a href="https://www.google.com/search?q=google&rlz=1C1VDKB_enIN1022IN1022&oq=google&aqs=chrome.0.0i131i355i433i512j46i131i199i433i465i512j0i131i433i512l3j0i433i512l4.4779j0j15&sourceid=chrome&ie=UTF-8" > click togoogle</a>
+  <button>Click me</button>  
+  <button>Click me</button> 
+  <button>Click me</button> 
+  <button>Click me</button> 
+  <button>Click me</button>
+  <br>
+  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet velit dolore eos illo eligendi, incidunt doloremque quidem sapiente atque vitae, debitis cum praesentium?</h3>
+ 
+
+</body>
+<script src="jquery-3.6.1.min.js"></script>
+<script>
+    $('h1').css("background-color","red" );
+    $('a').attr('href',"https://twitter.com/");
+    //event
+    $('h1').click( function(){
+   
+    });
+//click event
+    $("button").click(function(){
+         $('button').css("background-color","purple");
+    });
+    $('a').before("<p>dededemdekmdemd</p>");
+//toggle
+$('h3').on("click",function(){
+  $('h3').fadeToggle();
+} );
+</script>
+</html>

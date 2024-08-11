@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>option to set alarm</h2>
+<input type="text" id="alarm" name="alarm" placeholder="enter the time" >
+<br>
+<br>
+<button id="alarmsubmit" type="submit">Set alarm</button>
+    <script>
+
+        var audio=new Audio()
+function ringbell(){
+    audio.play();
+}
+
+
+  let alarmsubmit=document.getElementById('alarmsubmit');
+  alarmsubmit.addEventListener('click',setalarm);
+  function  setalarm(e){
+    e.preventDefault();
+    console.log("setting alarm");
+    const alarm=document.getElementById("alarm");
+    alarmdate=new Date(alarm.value);
+    console.log(alarmdate);
+    now=new Date();
+    let timetoalarm=alarmdate -now
+    console.log(timetoalarm);
+
+
+    if(timetoalarm>=0){
+       setTimeout(() => {
+        
+       }, timetoalarm);
+        }
+ 
+
+
+  }
+    </script>
+</body>
+</html>

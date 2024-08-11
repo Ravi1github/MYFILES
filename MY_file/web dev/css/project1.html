@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-image: url('https://images.pexels.com/photos/945471/pexels-photo-945471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
+    background-size: cover;
+        }
+        .left{ display: inline-block;
+    
+         width: 10%;
+         margin-left: 10px;
+         position: absolute;
+         
+         text-align: center;
+         margin-bottom: 20px;
+         
+       
+        }
+        .centre{ 
+            
+            
+            display:block;
+            width: 32%;
+            margin: 1px auto;
+        }
+        .right{
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            
+            display: inline-block;
+            width: 10%;
+            
+        }
+        .navbar li  {
+            display: inline-block;
+           
+
+            
+          
+        }
+        img{
+            display: block;
+          margin: auto;
+          border-radius: 10px;
+        }
+        li a{
+            text-decoration: none;
+            margin: 0px 20px;
+            color: black;
+          
+          
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+           
+        }
+        .btn{
+margin: 4px;
+padding: 3px;
+cursor: pointer;
+
+        }
+        .btn:hover{
+            color:red;
+            border:1px solid red;
+            border-radius: 3px;
+        }
+        .cont{
+            margin: 100px 30px;
+            width: 33%;
+            
+        }
+        .form input{
+            display: block;
+            margin: 5px auto;
+            padding: 5px;
+            text-align: center;
+            border: 2px solid brown;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        h1{
+            text-align: center;
+            
+          
+            margin: 2px 40px;
+        }
+        .cont{
+            
+        }
+        #but{
+            display: block;
+            margin: 3px auto;
+            width: 200px;
+            font-size: 15px;
+            border-radius: 4px;
+            border: 2px solid brown;
+        }
+        input:hover{
+            background-color: antiquewhite;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhjmVihnZbWQ-Qr1BzMrJXDThlY7PF8sPwg&usqp=CAU" width="70px">
+            
+        </div>
+
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="">Home</a> </li>
+                <li><a href="">About</a></li>
+                <li><a href="">fitness</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+   
+        <div class="right">
+<button class="btn">call us</button>
+<button class="btn" >Email us</button>
+        </div>
+    </header>
+    <div class="cont">
+        <h1>To join gym fill the form</h1>
+        <form action="no.php">
+ <div class="form">
+  <input type="text" placeholder="enter your name">
+</div>
+<div class="form">
+    <input type="text" placeholder="email">
+  </div>
+  <div class="form">
+    <input type="text" placeholder="address">
+  </div>
+  <div class="form">
+    <input type="text" placeholder="phone no.">
+    <button class="btn" id="but">submit</button>
+  </div>
+  
+        </form>
+    </div>
+</body>
+</html>

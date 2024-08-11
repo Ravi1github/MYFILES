@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array and object</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <script>
+    //object in js
+    let employees = {
+      name: "ravi",
+      salary: 30,
+      channel: "code with harry",
+    }
+    console.log(employees);
+    console.log("printing indiviudal one");
+    console.log(employees.channel);
+                                       
+    //array
+    let names = [2, 12.12, 1, "ravi"];
+    console.log(names);
+    console.log(names[3]);
+    //finding length of array
+    console.log(names.length);
+    //sorting array
+    names = names.sort();
+    console.log(names);
+    //adding new  element to array
+    names.push("this is pushed");
+    //to joinsomething on on each key
+    document.getElementById("demo").innerHTML = names.join(" added  ");
+    console.log(names);
+    //we can also define array as
+    let details = new Array("ram", 12, 1.1);
+    console.log(details);
+//contacting to array
+// let arr3=arr1.concat(arr2);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css varabiles and custom prop.html</title>
+    <style>
+        /* global declaration */
+      :root{
+        --primary-color:red;
+        --danger-color:yellow;
+        
+
+    }
+    .box{
+        /* declaration of varabiles  isme varabiles ke naam se color stored kar rahee hai  */
+        /* we can give any name to varabiles */
+        --box-color:blue;
+        border:2px solid red;
+        height: 200px;
+        width: 200px;
+        background-color: var(--box-color);
+        margin: 2px 9px;
+        box-shadow: 3px 3px var(--primary-color);
+
+    }
+      
+    .cont{
+        /* form global varables */
+        background-color: var(--danger-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

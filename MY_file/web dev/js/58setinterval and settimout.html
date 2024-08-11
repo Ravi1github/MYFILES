@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        //one by one we see the content by removing the comment
+        //settimeout allow us to run the function once after the interval of time
+        //setinterval  allow us to run the function repeatdly after the interval of time
+
+        function greet(name)
+        {
+            console.log("hello good morning "+ name + "bhai");
+        }
+       // greet("harry");
+        //parenthesis nhi lagana hai
+    let  out=  setTimeout(greet,5000,"harry");//5000 =5sec ke baad start hoga
+    console.log(out);
+//to clear the time
+// clearTimeout(out);
+
+//setintervaltimeout
+   let intervalid = setInterval(greet ,1000,"harry");//to print it continously
+//clearInterval(intervalid);
+    </script>
+</body>
+</html>

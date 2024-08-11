@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    people=['harry','rohan','skillf','shubham'];
+    //traditional method for loop
+//    for (let index = 0; index < people.length; index++) {
+//     let element = people[index];
+//     console.log(element);
+    
+//    }
+
+
+//1.iterating object
+obj={
+    name:'harry',
+    lang:"js",
+    hobby:'web dev'
+}
+//traditional method for loop
+//    for (let index = 0; index < Object.keys(obj).length; index++) {
+//     let element =  obj[Object.keys(obj)[index]] ;
+//     console.log(element);
+    
+//    }
+
+
+//2.iterating an object using for in loop
+
+for( key in obj)
+{
+   console.log(obj[key]);
+}
+//iterating an string using for in loop
+
+mystring='this is my string';
+for( char in mystring){
+   // console.log(mystring[char]);
+}
+
+
+     //*****for of loop******
+
+
+console.log("*****for of loop******") ;
+
+
+for( key of people){
+   console.log(key);
+}
+
+
+
+for( key of mystring){
+  // console.log(key);
+}
+
+
+
+
+
+
+
+
+
+
+
+  </script>  
+</body>
+</html>

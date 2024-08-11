@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //character class
+        // let reg=/\warry/; // \w means word character
+        // let reg=/\w+inn/;   //w+ means one or more word character
+        // let reg=/\Wharry/; //  /W non word char
+        //simaralry \d =for digit  \D no digit and d+ D+ are also available
+
+        let reg=/\D99/;
+        //let reg=/\Wdd1/;  
+        // let reg=/\sram/; // \s for space
+
+        // assertion
+
+        //reg=/h(?=y)/;  // h ke baad y ho   
+     // reg=  /h(?!y)/   // h ke baad y na ho 
+        let str = "harryinn*dd1hyfjnfwc ramdk99";
+        let res1 = reg.exec(str);
+        console.log("the result is ", res1);
+        if (res1) {
+            console.log(`   match  `);
+        }
+        else {
+            console.log(`not match`);
+        }
+    </script>
+
+</body>
+
+</html>

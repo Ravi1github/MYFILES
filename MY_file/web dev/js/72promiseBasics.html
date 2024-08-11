@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function func1(){
+            //promise
+            //promise take two function as argument: resolve and reject
+            
+           return new Promise(function(resolve,reject){
+            setTimeout(() => {
+                const noterror=true;
+                if(noterror){
+                    console.log(" function:your promise has been resolved");
+                resolve();
+                }
+                else{
+                    console.log("your promise not resolved");
+                reject('sorry not fullfilled');  
+                }
+                
+            }, 2000);
+           })
+        }
+        //calling function
+        //if phle then func run if it fail  catch func run hoga
+        func1().then(function(){
+            console.log("harry:thanks for resolving");
+        }).catch(function(){
+         console.log("harry:very bad bro "+error
+         );
+        })
+    </script>
+</body>
+</html>

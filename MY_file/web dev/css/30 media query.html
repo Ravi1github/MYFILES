@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .box{ font-size: 40px;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+            /* to make all disappeare */
+            display: none;
+        }
+        /* if its width lies b/w the given width the its show it */
+      @media(max-width:300px){
+          #box1{
+              display: block;
+              background-color: aqua;
+          }
+      } 
+      @media   (min-width:300px)and  (max-width:500px){
+          #box2{
+              display: block;
+              background-color: beige;
+          }
+        }
+        @media   (min-width:500px)and  (max-width:800px){
+          #box3{
+              display: block;
+              background-color:antiquewhite;
+          }
+        }
+        @media   (min-width:800px){
+          #box4{
+              display: block;
+              background-color:blanchedalmond;
+          }
+        }
+       
+    
+    </style>
+</head>
+<body>
+   <div class="box" id="box1">mein ek iphone hu</div>
+   <div class="box" id="box2">mein ek tablet hu</div>
+   <div class="box" id="box3">mein ek computer hu</div>
+   <div class="box" id="box4">mein ek widescreen hu</div> 
+</body>
+</html>

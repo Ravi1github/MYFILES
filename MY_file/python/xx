@@ -1,0 +1,11 @@
+Mini Project of Python 
+Number guessing game
+Guess a number (between 1 and 9):
+3
+Your guess was too low: Guess a number higher than 3
+5
+Your guess was too low: Guess a number higher than 5
+8
+Your guess was too low: Guess a number higher than 8
+9
+CONGRATULATIONS! YOU HAVE GUESSED THE             NUMBER 9 IN 3 ATTEMPTS!

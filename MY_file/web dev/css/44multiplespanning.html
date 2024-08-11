@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.item{
+    background-color: rgb(133, 194, 247);
+    border:2px solid red;
+    margin :4px;
+    padding: 4px;
+
+}
+.cont{
+    display: grid;
+    grid-gap: 1rem;
+    /* no. of col same rahega */
+    /* isme pura navbar space occupy karega*/
+    grid-template-areas: 'navbar navbar navbar navbar'
+    /* isme 3section aurr ek aside occupy karega */
+    'section section section aside'
+    'footer footer footer footer'   
+    ;
+
+}
+#navbar{
+grid-area: navbar;
+
+}
+#section{
+grid-area: section;
+}
+#aside{
+grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+}
+input{
+    float: right;
+    margin-right: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <div id="navbar" class="item">
+        home about contact us
+        <input type="text">
+    </div>
+    <div id="section" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum temporibus, adipisci eaque reiciendis totam omnis accusamus illo, esse aliquid nostrum culpa Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, perferendis!lorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet architecto quasi eos temporibus consequuntur error sunt placeat repudiandae doloremque assumenda, dolorum ea mollitia fugiat facilis vel est numquam quae corrupti? Esse tempore beatae sapiente illo maiores? Reprehenderit, repellendus doloribus expedita, nobis amet veritatis, vero qui explicabo minima molestiae libero quae eaque voluptates minus veniam iusto? Perferendis iure obcaecati vero molestias unde deleniti inventore dolores! Dignissimos expedita provident quidem cumque blanditiis maiores consequuntur totam, molestiae minus dolorum velit libero obcaecati labore optio, earum a et illum necessitatibus in amet maxime. Nemo tempore dolorum et rerum culpa magnam at exercitationem soluta esse. necessitatibus dolorum ab, repellendus maiores fugit odit repellat perferendis!
+    </div>
+    <div id="aside" class="item">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore est a deleniti possimus nostrum pariatur? Recusandae accusamus eveniet fugiat! consectetur adipisicing elit. Praesentium, maxime?</div>
+    <div class="item" id="footer">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dolore nostrum cupiditate similique natus. Totam porro, accusamus sint quisquam, dolores rem nulla molestiae consequuntur eveniet incidunt veritatis tenetur consectetur esse?
+    </div>
+  <!-- <div class="item">item1</div>
+  <div class="item">item2</div>
+  <div class="item">item3</div>
+  <div class="item">item4</div>
+  <div class="item">item5</div>
+  <div class="item">item6</div>
+  <div class="item">item7</div>
+  <div class="item">item8</div>
+  <div class="item">item9</div>
+  <div class="item">item10</div>
+  <div class="item">item11</div>
+  <div class="item">item12</div>   -->
+</div>
+</body>
+</html>

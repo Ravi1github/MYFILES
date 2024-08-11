@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .imgbox{
+            background-image: url('image1.png');
+            background-repeat: no-repeat;
+            position: relative;
+            height: 250px;
+            width: 250px;
+            margin: 30px;
+        }
+        .whitebox{
+            
+            background-color: aliceblue;
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+        }
+                </style>
+            </head>
+            <body>
+                <div class="whitebox">
+                    <div class="imgbox" draggable="true">
+        
+                    </div>
+                </div>
+                <div class="whitebox"></div>
+                <div class="whitebox"></div>
+                <div class="whitebox"></div>
+                <script>
+          let imgbox=document.getElementById('imgbox');
+          let whitebox=document.getElementsByClassName('whitebox');
+         imgbox.addEventListener('dragstart',()=>{
+            console.log('dragstart');
+         });
+         imgbox.addEventListener('dragend',()=>{
+            console.log('dragend');
+         });
+         
+        
+                </script>
+            </body>
+        
+            </html>
+        </body>
+        </html>

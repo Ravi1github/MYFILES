@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+
+</head>
+
+<body>
+    <h2>this is my body</h2>
+    <h2 id="hh">this is my body</h2>
+    <h2 class="second">this is my body</h2>
+</body>
+<script src="jquery-3.6.1.min.js"></script>
+<!-- or -->
+<!-- it is taken form jquery cdn website -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+<script>
+     console.log("we are using jquery");
+    //when our website is loded then only jqery apply we write our code under the ready function  
+    $(document).ready(function () {
+       
+        //syntax for jquery
+        // $('selector').action();
+        $('h2').click(function () {
+            console.log("this is run");
+            //it all hide
+            //    $('h2').hide();
+            //for id selector
+            //    $('#hh').hide();
+        });
+        //by using class
+        // $('.second').click();
+        //it click on all element
+        $("*").click();
+    });
+</script>
+
+</html>

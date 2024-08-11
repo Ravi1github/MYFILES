@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulation of dom</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT US</li>
+            <li>SERVICES</li>
+            <li>MORE ABOUT US</li>
+        </ul>
+    </div>
+    <script>
+       
+        //for accessing html content we use it
+        let idmain=document.getElementById('main');
+        console.log(idmain);
+        //for class
+        let cont=document.getElementsByClassName('container');
+        console.log(cont);
+        //it return the first matching class or id
+        let sel=document.querySelector(' .container');
+        console.log("selector return " ,sel);
+        let all=document.querySelectorAll('.container li')
+        console.log("all selector is ",all);
+
+    </script>
+</body>
+</html>

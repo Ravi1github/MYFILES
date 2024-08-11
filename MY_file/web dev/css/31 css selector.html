@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        /* jitne div ke ander p  honge sab pe lagega */
+        div p{
+         background-color: aqua;
+      font-weight: bold;
+        }
+        /* div>p ,then div ke just baad ko p honge unpe lagega */
+        div>p{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+  <div class="cont">
+      <div class="row">
+          <ul>
+              <li class="items"> <p>li paragraph</p></li>
+             
+          </ul>
+          <p>this is a paragraph</p>
+      </div>
+      <p>this is an paragraph</p>
+  </div> 
+  <p>this is outer paragraph</p> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .{  box-sizing: border-box;
+            
+        }
+        .container{
+            width: 900px;
+            border: 10px red solid; 
+            /* margin auto to make container on centre */
+            margin: 40px auto;
+            font-style: italic;
+            /* align the text */
+            text-align: left;
+            background-color: antiquewhite;
+            float: left;
+            
+        }
+        .items{
+            border:5px solid brown;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(176, 139, 168);
+        }
+        #fruits{
+            /* to make float */
+            float:left;
+            width:40%;
+        }
+        #computer{
+            float:left;
+            width:40%;
+           
+        }
+        #stationary{
+            /* float:left; */
+            width:90%;
+            /* to prevent the overlapping */
+            clear: both;
+        }
+        h2{
+            margin:  auto;
+            width :400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>welcome to my page</h2>
+        <div id="fruits" class="items">
+            <h3>my fruits </h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, ratione?</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>my computer </h3>
+            <p id="computerpara" class="para">
+            Lorem ipsum dol sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor sed, consequatur sint iste est qui cumque doloremque ab deserunt. elit. Sapiente dicta commodi ut dolor quidem?
+            </p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3> my stationary </h3>
+            <p id="stationarypara" class="para">
+      Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, mollitia. adipisicing elit. Non molestias ratione sit!
+            </p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+   .box{
+       border:2px solid red;
+       height: 200px;
+       width: 200px;
+       border-radius: 10px;
+       background-color: aqua;
+       /* to make transform  good  we use the transtion*/
+       transition: all 2s ease-in-out;
+   }
+   .cont{
+       background-color: antiquewhite;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+   }
+    .box:hover{
+        /* transform: rotate(45deg);  */
+        transform: skew(45deg);
+        /* scale se 3 times becomes larger */
+        /* transform: scale(3); */
+       /* transform: translate(121px,121px); */
+    }
+    </style>
+</head>
+<body>
+   <div class="cont">
+       <div class="box">
+        this is box
+   </div></div> 
+</body>
+</html>

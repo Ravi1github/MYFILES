@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            border:2px solid red;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(163, 230, 230);
+            /* syntax  box shadow =x  y blur-radius radius spread color   */
+            /* +ve make downward shadow and -ve make upward */
+            box-shadow: -10px -10px 10px  2px gray;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="winner" onclick="win()" >
+            <h2>winner </h2>  
+        
+         </div>
+
+
+        <div class="card" id="card1" onclick="number1()">
+           <h2>player 1</h2>  
+           <p id="player1"></p>
+        </div>
+       
+        <div class="card" id="card2" onclick="number2()">
+          <h2>player 2</h2> 
+          <p id="player2"></p>
+        </div>
+      
+        <script> 
+        let player1,player2;
+            function number1(){
+
+            n1=Math.floor(1+(7-1)*Math.random());
+       player1=   document.getElementById('player1').innerText=n1;
+       
+            }
+
+            function number2(){
+
+      n2=Math.floor(1+(7-1)*Math.random());
+   player2=document.getElementById('player2').innerText=n2;
+
+}
+function win(){ 
+if(player1>player2)
+{
+    document.getElementById('winner').innerHTML="first player is win";
+}
+else if(player2>player1){
+    document.getElementById('winner').innerHTML="second player is win";
+}
+else{
+    document.getElementById('winner').innerHTML="draw";
+}
+}
+
+        </script>
+    </div>
+</body>
+</html>

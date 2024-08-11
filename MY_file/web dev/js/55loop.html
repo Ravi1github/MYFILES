@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>loop</h2>
+    <script>
+        // let i=0;
+        // for(i=0;i<=5;i++)
+        // {
+        //     console.log(i);
+        // }
+        let array=["ram","rakesh"," sunny"];
+        for(let i=0;i<array.length;i++)
+        {
+            console.log(array[i]);
+        }
+        //we can used loop as
+        for(key of array)
+        {
+            console.log("hello "+ key +" how are you");
+        }
+        //or 
+        console.log("another way for loop in array");
+
+        array.forEach(function f(element){
+            console.log("hello "+element);
+        });
+
+        //loop for objects
+
+        let employees={
+            name:"ravi",
+            salary:2,
+            channel:"cwh",
+        }
+        console.log("printing the object");
+        for(key in employees)
+        {
+            console.log(`the ${key} of emlpyess is ${employees[key]}`);
+        }
+        //while and do while loop
+        console.log("printing for do while loop");
+        let i=0;
+        do{
+         console.log(`${i}`)
+         i++;
+        }while(i<4);
+
+    </script>
+</body>
+</html>
